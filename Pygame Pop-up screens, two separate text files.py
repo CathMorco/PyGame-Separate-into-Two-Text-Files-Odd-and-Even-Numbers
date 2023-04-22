@@ -80,7 +80,11 @@ def mainProgram(lines,texts,title):
                 dir[i] *= -1
 
     #Combines the color change and draw text into one function
-    
+    def array_func(col,dir,text,size,x,y):
+        for i in range(len(text)):
+            draw_text(text[i],size,col[i],x,y + i*20)
+            col_change(col[i],dir[i])
+            
     # Initialising pygame
     
 
