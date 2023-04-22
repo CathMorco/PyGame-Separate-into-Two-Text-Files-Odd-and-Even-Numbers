@@ -55,7 +55,9 @@ def mainProgram(lines,texts,title):
     pygame.display.set_caption(title)
 
     #Multiplies the color directory and its values in accordance to the number of items in its list
-    
+    for i in lines:
+        col_dir.append(col_dir[0])
+        def_col.append(def_col[0])
 
     #Initialized values for functions
     
