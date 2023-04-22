@@ -17,7 +17,8 @@ white = (255,255,255)
 col_spd = 1
 
 #The color directory & its values
-
+col_dir =[[-1,1,1]]
+def_col = [[120,120,240]]
 
 #Opens and reads each individual line in the text file
 
