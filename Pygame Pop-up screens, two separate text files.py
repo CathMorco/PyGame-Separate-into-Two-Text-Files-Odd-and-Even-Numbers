@@ -25,7 +25,14 @@ with open("myfile.txt") as file:
     lines = [line.rstrip() for line in file]
 
 #Divides the list into even and odd numbers
-
+evens = []
+odds = []
+for i in lines:
+    i=int(i)
+    if i % 2 == 0:
+        evens.append(i)
+    else:
+        odds.append(i)
 
 #Tranfers the even and odd list of numbers into 2 separate text files
 
