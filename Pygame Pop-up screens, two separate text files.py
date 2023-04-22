@@ -35,7 +35,17 @@ for i in lines:
         odds.append(i)
 
 #Tranfers the even and odd list of numbers into 2 separate text files
+with open("even numbers.txt", "w") as even:
+    even.write("\n".join(str(i) for i in evens))
 
+with open("even numbers.txt", "r") as even:    
+    evenlines = [line.rstrip() for line in even]
+
+with open("odd numbers.txt", "w") as odd:
+    odd.write("\n".join(str(i) for i in odds))
+
+with open("odd numbers.txt", "r") as odd:    
+    oddlines = [line.rstrip() for line in odd]
 
 
 #Creates the main program
