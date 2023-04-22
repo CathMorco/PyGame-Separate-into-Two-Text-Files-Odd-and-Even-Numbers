@@ -84,9 +84,9 @@ def mainProgram(lines,texts,title):
         for i in range(len(text)):
             draw_text(text[i],size,col[i],x,y + i*20)
             col_change(col[i],dir[i])
-            
+
     # Initialising pygame
-    
+    pygame.init()
 
     #Creates the properties of the background screen so it can scroll
     
