@@ -89,7 +89,33 @@ def mainProgram(lines,texts,title):
     pygame.init()
 
     #Creates the properties of the background screen so it can scroll
-    
+    intermediate = pygame.surface.Surface((W, 5000))
+    i_a = intermediate.get_rect()
+    x1 = i_a[0]
+    x2 = x1 + i_a[2]
+    a, b = (255, 255, 255), (0, 0, 0)
+    y1 = i_a[1]
+    y2 = y1 + i_a[3]
+    h = y2-y1
+    rate = (float((b[0]-a[0])/h),
+            (float(b[1]-a[1])/h),
+            (float(b[2]-a[2])/h)
+            )
+    for line in range(y1,y2):
+        color = (min(max(a[0]+(rate[0]*line),0),255),
+                min(max(a[1]+(rate[1]*line),0),255),
+                min(max(a[2]+(rate[2]*line),0),255)
+                )
+        pygame.draw.line(intermediate, color, (x1, line),(x2, line))
+
+    y = 100
+    f = pygame.font.SysFont('', 17)
+    for i in lines:
+
+        y += 100
+
+    clock = pygame.time.Clock()    
+    quit = False
 
     #Runs the program
     
