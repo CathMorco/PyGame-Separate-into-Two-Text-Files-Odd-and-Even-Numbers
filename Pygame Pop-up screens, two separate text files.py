@@ -10,7 +10,8 @@ screen = pygame.display.set_mode ((W, H))
 clock = pygame.time.Clock()
 
 #RGB example values
-
+black = (0,0,0)
+white = (255,255,255)
 
 #The rate of change in colors
 
