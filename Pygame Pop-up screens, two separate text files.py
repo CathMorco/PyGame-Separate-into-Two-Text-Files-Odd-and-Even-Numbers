@@ -60,6 +60,8 @@ def mainProgram(lines,texts,title):
         def_col.append(def_col[0])
 
     #Initialized values for functions
+    minimum = 0
+    maximum = 255
     
     #Draws the text
     
