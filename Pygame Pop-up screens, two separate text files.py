@@ -2,7 +2,7 @@
 import pygame
 
 #Sets the value for the width and height of the display screen
-
+W, H = 800, 600
 
 #Creates the display screen
 
