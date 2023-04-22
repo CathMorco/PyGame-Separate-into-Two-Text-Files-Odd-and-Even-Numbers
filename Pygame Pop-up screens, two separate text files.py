@@ -21,7 +21,8 @@ col_dir =[[-1,1,1]]
 def_col = [[120,120,240]]
 
 #Opens and reads each individual line in the text file
-
+with open("myfile.txt") as file:
+    lines = [line.rstrip() for line in file]
 
 #Divides the list into even and odd numbers
 
