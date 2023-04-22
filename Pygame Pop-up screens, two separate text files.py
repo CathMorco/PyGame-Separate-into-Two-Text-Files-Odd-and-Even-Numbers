@@ -73,7 +73,11 @@ def mainProgram(lines,texts,title):
         intermediate.blit(text_surface, text_rect)
 
     #Creates the color change
-    
+    def col_change(col,dir):
+        for i in range(1):
+            col[i] += col_spd * dir[i]
+            if col[i] >=maximum or col[i] <=minimum:
+                dir[i] *= -1
 
     #Combines the color change and draw text into one function
     
