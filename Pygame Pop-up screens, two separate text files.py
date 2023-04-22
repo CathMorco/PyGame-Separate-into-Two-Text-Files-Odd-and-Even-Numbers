@@ -52,7 +52,7 @@ with open("odd numbers.txt", "r") as odd:
 def mainProgram(lines,texts,title):
 
     #Sets the title for the screen display
-    
+    pygame.display.set_caption(title)
 
     #Multiplies the color directory and its values in accordance to the number of items in its list
     
