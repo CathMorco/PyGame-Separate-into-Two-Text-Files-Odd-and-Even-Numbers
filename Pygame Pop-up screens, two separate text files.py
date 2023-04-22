@@ -49,7 +49,7 @@ with open("odd numbers.txt", "r") as odd:
 
 
 #Creates the main program
-
+def mainProgram(lines,texts,title):
 
     #Sets the title for the screen display
     
