@@ -118,6 +118,26 @@ def mainProgram(lines,texts,title):
     quit = False
 
     #Runs the program
-    
+    run=True
+
+    scroll_y = 0
+
+    while run:
+
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                run = False
+            if event.type == pygame.MOUSEBUTTONDOWN:
+                if event.button == 4: scroll_y = min(scroll_y + 15, 0)
+                if event.button == 5: scroll_y = max(scroll_y - 15, -3000)
+
+        screen.blit(intermediate, (0, scroll_y))
+
+        array_func(def_col,col_dir,texts,20, W / 2 , 20)
+
+        clock.tick()
+
+        display.blit(screen,(0,0))
+        pygame.display.update()
 
 #Runs the program for the 2 text files
