@@ -62,9 +62,15 @@ def mainProgram(lines,texts,title):
     #Initialized values for functions
     minimum = 0
     maximum = 255
-    
+
     #Draws the text
-    
+    def draw_text(text, size, col, x, y):
+        font = pygame.font.get_default_font()
+        font = pygame.font.Font(font, size)
+        text_surface = font.render(text, True, col)
+        text_rect=text_surface.get_rect()
+        text_rect.center = (x,y)
+        intermediate.blit(text_surface, text_rect)
 
     #Creates the color change
     
