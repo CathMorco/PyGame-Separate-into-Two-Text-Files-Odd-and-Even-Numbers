@@ -14,7 +14,7 @@ black = (0,0,0)
 white = (255,255,255)
 
 #The rate of change in colors
-
+col_spd = 1
 
 #The color directory & its values
 
